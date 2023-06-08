@@ -17,8 +17,8 @@ const Home = () => {
     console.log(x, y);
     const newBoard: number[][] = JSON.parse(JSON.stringify(board));
     //if (board[y + 1] !== undefined && board[y + 1][x] !== 0 && board[y + 1][x] !== turnColor) {
-    if (board[y+1]!== undefined &&board[y+1][x]===3-turnColor){  
-    newBoard[y][x] = turnColor;
+    if (board[y + 1] !== undefined && board[y + 1][x] === 3 - turnColor) {
+      newBoard[y][x] = turnColor;
       // turnColor === 1 ? setTurnColor(2) : setTurnColor(1);
       //setTurnColor(turnColor===1?2:1)
       setTurnColor(3 - turnColor);
